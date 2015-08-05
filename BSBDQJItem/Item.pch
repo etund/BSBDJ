@@ -1,0 +1,44 @@
+//
+//  Item.pch
+//  BSBDQJItem
+//
+//  Created by etund on 15/7/22.
+//  Copyright (c) 2015年 etund. All rights reserved.
+//
+
+#ifndef BSBDQJItem_Item_pch
+#define BSBDQJItem_Item_pch
+
+//颜色
+#define ETColor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define ETColorAlpha(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define ETGlobalBackColor ETColor(233, 233, 233)
+#define ETGlobalBackColorAlpha(alpha) ETColorAlpha(233,233,233,alpha)
+//UIView分类
+#import "UIView+ETExtension.h"
+
+//UIBarbuttionItem
+#import "UIBarButtonItem+ETExtension.h"
+
+//UINavigation分类
+#import "UINavigationController+ETExtension.h"
+
+//UIColor分类
+#import "UIColor+ETExtension.h"
+
+//NSDate分类
+#import "NSDate+ETExtentsion.h"
+
+#import "ETConst.h"
+
+//NSLog
+#define ETLog(...) NSLog(__VA_ARGS__)
+
+#define ETLogFunc ETLog(@"%s",__func__)
+#define ETScreenW [UIScreen mainScreen].bounds.size.width
+#define ETScreenH [UIScreen mainScreen].bounds.size.height
+
+#define ETKeyWindow [UIApplication sharedApplication].keyWindow
+
+#endif
