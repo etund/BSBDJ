@@ -22,7 +22,8 @@
     _data = data;
     self.screen_name.text = data.screen_name;
     self.fans_count.text = data.fans_count;
-    [self.icon sd_setImageWithURL:[NSURL URLWithString:data.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+//    [self.icon sd_setImageWithURL:[NSURL URLWithString:data.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.icon setHeader:data.header];
 }
 
 

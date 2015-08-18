@@ -20,7 +20,8 @@
 
 - (void)setData:(ETRecommendTagData *)data{
     _data = data;
-    [self.icon sd_setImageWithURL:[NSURL URLWithString:data.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+//    [self.icon sd_setImageWithURL:[NSURL URLWithString:data.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.icon setHeader:data.image_list];
     self.tagName.text = data.theme_name;
     self.sub_count.text = [NSString stringWithFormat:@"%zd",data.sub_number];
 }

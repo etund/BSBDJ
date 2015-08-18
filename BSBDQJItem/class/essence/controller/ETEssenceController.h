@@ -10,4 +10,6 @@
 
 @interface ETEssenceController : UIViewController
 
+@property (nonatomic, strong) NSString * dataType ;
+
 @end

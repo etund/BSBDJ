@@ -13,7 +13,7 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     self.imageView.frame = CGRectMake(0, 0, self.imageView.width, self.imageView.width);
-    self.titleLabel.frame = CGRectMake(0, self.imageView.width + 2, self.imageView.width,  self.height - self.imageView.width);
+    self.titleLabel.frame = CGRectMake(0, self.imageView.width + 2, self.imageView.width, self.height - self.imageView.width);
 }
 
 @end

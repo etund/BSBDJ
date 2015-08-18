@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ETTopicData.h"
+#import "ETTopicCell.h"
 
 @interface ETReplyController : UIViewController
+
+@property (nonatomic, strong) ETTopicData * topPicData;
 
 @end

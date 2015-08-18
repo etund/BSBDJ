@@ -10,6 +10,12 @@
 
 @interface ETInputPublishTextView : UITextView
 
+@property (nonatomic, strong) UIColor * placeholderColor;
+
+@property (nonatomic, strong) UIFont * placeholderFont;
+
+@property (nonatomic, strong) NSString * defaultText;
+
 @property (nonatomic, strong) NSString  * placeholder;
 
 @end

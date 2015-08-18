@@ -19,4 +19,5 @@ typedef NS_ENUM(NSInteger,ETTopicControllerType){
 
 @interface ETTopicController : UITableViewController
 @property (nonatomic, assign) ETTopicControllerType type;
+@property (nonatomic, strong) NSString * dataType ;
 @end

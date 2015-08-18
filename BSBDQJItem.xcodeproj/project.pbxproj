@@ -122,16 +122,22 @@
 		80CC795E1B66FB7E00C64B10 /* ETTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CC795C1B66FB7E00C64B10 /* ETTopicCell.m */; };
 		80CC795F1B66FB7E00C64B10 /* ETTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CC795D1B66FB7E00C64B10 /* ETTopicCell.xib */; };
 		80CC79641B66FC1500C64B10 /* MM_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80CC79631B66FC1500C64B10 /* MM_0.jpg */; };
+		80CE117B1B7457FE003F8184 /* ETTagEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CE117A1B7457FE003F8184 /* ETTagEditController.m */; };
 		80D07A351B5FB9EC00E0E31F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D07A341B5FB9EC00E0E31F /* main.m */; };
 		80D07A401B5FB9EC00E0E31F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D07A3F1B5FB9EC00E0E31F /* Images.xcassets */; };
 		80D07A4F1B5FB9EC00E0E31F /* BSBDQJItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D07A4E1B5FB9EC00E0E31F /* BSBDQJItemTests.m */; };
 		80D13D4E1B71D36400EE2329 /* ETPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D13D4C1B71D36400EE2329 /* ETPublishController.m */; };
 		80D13D521B72261800EE2329 /* ETInputPublishTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D13D511B72261800EE2329 /* ETInputPublishTextView.m */; };
+		80D35F621B78FC54002F1854 /* ETReplyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D35F611B78FC54002F1854 /* ETReplyData.m */; };
+		80D35F651B7900D9002F1854 /* ETCommentUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D35F641B7900D9002F1854 /* ETCommentUserData.m */; };
+		80D35F691B7906DD002F1854 /* ETCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D35F671B7906DD002F1854 /* ETCommentCell.m */; };
+		80D35F6A1B7906DD002F1854 /* ETCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D35F681B7906DD002F1854 /* ETCommentCell.xib */; };
+		80D76F7A1B72F70B00E73F9A /* ETToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D76F791B72F70B00E73F9A /* ETToolView.m */; };
+		80D76F7C1B72F7AC00E73F9A /* ETToolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D76F7B1B72F7AC00E73F9A /* ETToolView.xib */; };
 		80D8E54C1B614BDF005643AB /* ETFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E54A1B614BDF005643AB /* ETFriendController.m */; };
 		80D8E5501B614BFE005643AB /* ETMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E54F1B614BFE005643AB /* ETMeController.m */; };
 		80D8E5561B614C24005643AB /* ETNavContioller.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E5531B614C24005643AB /* ETNavContioller.m */; };
 		80D8E5571B614C24005643AB /* ETTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E5551B614C24005643AB /* ETTabBarController.m */; };
-		80D8E55B1B614C4A005643AB /* ETNewPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E55A1B614C4A005643AB /* ETNewPostController.m */; };
 		80D8E55F1B614C6B005643AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E55E1B614C6B005643AB /* AppDelegate.m */; };
 		80D8E5621B614C9A005643AB /* ETTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E5611B614C9A005643AB /* ETTabBar.m */; };
 		80D8E5661B6152E3005643AB /* UIView+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E5651B6152E3005643AB /* UIView+ETExtension.m */; };
@@ -141,6 +147,14 @@
 		80E48D941B6E81C100C7BEE1 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E48D901B6E81C100C7BEE1 /* DALabeledCircularProgressView.m */; };
 		80E48D951B6E81C100C7BEE1 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 80E48D911B6E81C100C7BEE1 /* LICENSE.md */; };
 		80E48D961B6E81C100C7BEE1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 80E48D921B6E81C100C7BEE1 /* README.md */; };
+		80EB0FD31B783F4B0060488D /* ETReplyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80EB0FD21B783F4B0060488D /* ETReplyController.xib */; };
+		80EC4C971B79A9A0006EE60B /* ETHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4C961B79A9A0006EE60B /* ETHeaderView.m */; };
+		80EC4C9A1B79DEC0006EE60B /* ETNewPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4C991B79DEC0006EE60B /* ETNewPostController.m */; };
+		80EC4C9D1B79E6B0006EE60B /* ETTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4C9C1B79E6B0006EE60B /* ETTopWindow.m */; };
+		80EC4CA31B79F26F006EE60B /* UIImage+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4CA21B79F26F006EE60B /* UIImage+ETExtension.m */; };
+		80EC4CA61B79F645006EE60B /* UIImageView+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4CA51B79F645006EE60B /* UIImageView+ETExtension.m */; };
+		80F99FDB1B75C58200D8E611 /* ETEditTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F99FDA1B75C58200D8E611 /* ETEditTagTextField.m */; };
+		80F9D8681B75FC9F00DF1AA6 /* ETTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F9D8671B75FC9F00DF1AA6 /* ETTagButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -373,6 +387,8 @@
 		80CC795C1B66FB7E00C64B10 /* ETTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTopicCell.m; sourceTree = "<group>"; };
 		80CC795D1B66FB7E00C64B10 /* ETTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETTopicCell.xib; sourceTree = "<group>"; };
 		80CC79631B66FC1500C64B10 /* MM_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MM_0.jpg; sourceTree = "<group>"; };
+		80CE11791B7457FE003F8184 /* ETTagEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTagEditController.h; sourceTree = "<group>"; };
+		80CE117A1B7457FE003F8184 /* ETTagEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTagEditController.m; sourceTree = "<group>"; };
 		80D07A2F1B5FB9EC00E0E31F /* BSBDQJItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDQJItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D07A331B5FB9EC00E0E31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80D07A341B5FB9EC00E0E31F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -384,6 +400,16 @@
 		80D13D4C1B71D36400EE2329 /* ETPublishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETPublishController.m; sourceTree = "<group>"; };
 		80D13D501B72261800EE2329 /* ETInputPublishTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETInputPublishTextView.h; sourceTree = "<group>"; };
 		80D13D511B72261800EE2329 /* ETInputPublishTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETInputPublishTextView.m; sourceTree = "<group>"; };
+		80D35F601B78FC54002F1854 /* ETReplyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETReplyData.h; sourceTree = "<group>"; };
+		80D35F611B78FC54002F1854 /* ETReplyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETReplyData.m; sourceTree = "<group>"; };
+		80D35F631B7900D9002F1854 /* ETCommentUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCommentUserData.h; sourceTree = "<group>"; };
+		80D35F641B7900D9002F1854 /* ETCommentUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCommentUserData.m; sourceTree = "<group>"; };
+		80D35F661B7906DD002F1854 /* ETCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCommentCell.h; sourceTree = "<group>"; };
+		80D35F671B7906DD002F1854 /* ETCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCommentCell.m; sourceTree = "<group>"; };
+		80D35F681B7906DD002F1854 /* ETCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETCommentCell.xib; sourceTree = "<group>"; };
+		80D76F781B72F70B00E73F9A /* ETToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETToolView.h; sourceTree = "<group>"; };
+		80D76F791B72F70B00E73F9A /* ETToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETToolView.m; sourceTree = "<group>"; };
+		80D76F7B1B72F7AC00E73F9A /* ETToolView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETToolView.xib; sourceTree = "<group>"; };
 		80D8E5491B614BDF005643AB /* ETFriendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETFriendController.h; sourceTree = "<group>"; };
 		80D8E54A1B614BDF005643AB /* ETFriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETFriendController.m; sourceTree = "<group>"; };
 		80D8E54E1B614BFE005643AB /* ETMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMeController.h; sourceTree = "<group>"; };
@@ -392,8 +418,6 @@
 		80D8E5531B614C24005643AB /* ETNavContioller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNavContioller.m; sourceTree = "<group>"; };
 		80D8E5541B614C24005643AB /* ETTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTabBarController.h; sourceTree = "<group>"; };
 		80D8E5551B614C24005643AB /* ETTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTabBarController.m; sourceTree = "<group>"; };
-		80D8E5591B614C4A005643AB /* ETNewPostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNewPostController.h; sourceTree = "<group>"; };
-		80D8E55A1B614C4A005643AB /* ETNewPostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNewPostController.m; sourceTree = "<group>"; };
 		80D8E55D1B614C6B005643AB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80D8E55E1B614C6B005643AB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		80D8E5601B614C9A005643AB /* ETTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTabBar.h; sourceTree = "<group>"; };
@@ -409,6 +433,21 @@
 		80E48D901B6E81C100C7BEE1 /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
 		80E48D911B6E81C100C7BEE1 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		80E48D921B6E81C100C7BEE1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		80EB0FD21B783F4B0060488D /* ETReplyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETReplyController.xib; sourceTree = "<group>"; };
+		80EC4C951B79A9A0006EE60B /* ETHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHeaderView.h; sourceTree = "<group>"; };
+		80EC4C961B79A9A0006EE60B /* ETHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHeaderView.m; sourceTree = "<group>"; };
+		80EC4C981B79DEC0006EE60B /* ETNewPostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETNewPostController.h; path = ../../../../../../../../../Users/etund/Documents/ETNewPostController.h; sourceTree = "<group>"; };
+		80EC4C991B79DEC0006EE60B /* ETNewPostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETNewPostController.m; path = ../../../../../../../../../Users/etund/Documents/ETNewPostController.m; sourceTree = "<group>"; };
+		80EC4C9B1B79E6B0006EE60B /* ETTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTopWindow.h; sourceTree = "<group>"; };
+		80EC4C9C1B79E6B0006EE60B /* ETTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTopWindow.m; sourceTree = "<group>"; };
+		80EC4CA11B79F26F006EE60B /* UIImage+ETExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ETExtension.h"; sourceTree = "<group>"; };
+		80EC4CA21B79F26F006EE60B /* UIImage+ETExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ETExtension.m"; sourceTree = "<group>"; };
+		80EC4CA41B79F645006EE60B /* UIImageView+ETExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ETExtension.h"; sourceTree = "<group>"; };
+		80EC4CA51B79F645006EE60B /* UIImageView+ETExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ETExtension.m"; sourceTree = "<group>"; };
+		80F99FD91B75C58200D8E611 /* ETEditTagTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEditTagTextField.h; sourceTree = "<group>"; };
+		80F99FDA1B75C58200D8E611 /* ETEditTagTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETEditTagTextField.m; sourceTree = "<group>"; };
+		80F9D8661B75FC9F00DF1AA6 /* ETTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTagButton.h; sourceTree = "<group>"; };
+		80F9D8671B75FC9F00DF1AA6 /* ETTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTagButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -813,6 +852,8 @@
 			children = (
 				80D13D4B1B71D36400EE2329 /* ETPublishController.h */,
 				80D13D4C1B71D36400EE2329 /* ETPublishController.m */,
+				80CE11791B7457FE003F8184 /* ETTagEditController.h */,
+				80CE117A1B7457FE003F8184 /* ETTagEditController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -829,6 +870,13 @@
 			children = (
 				80D13D501B72261800EE2329 /* ETInputPublishTextView.h */,
 				80D13D511B72261800EE2329 /* ETInputPublishTextView.m */,
+				80D76F781B72F70B00E73F9A /* ETToolView.h */,
+				80D76F791B72F70B00E73F9A /* ETToolView.m */,
+				80D76F7B1B72F7AC00E73F9A /* ETToolView.xib */,
+				80F99FD91B75C58200D8E611 /* ETEditTagTextField.h */,
+				80F99FDA1B75C58200D8E611 /* ETEditTagTextField.m */,
+				80F9D8661B75FC9F00DF1AA6 /* ETTagButton.h */,
+				80F9D8671B75FC9F00DF1AA6 /* ETTagButton.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -863,6 +911,10 @@
 				80B996D01B67289800B8EEE3 /* ETRecommendTagData.m */,
 				80B996D21B67290C00B8EEE3 /* ETTopicData.h */,
 				80B996D31B67290C00B8EEE3 /* ETTopicData.m */,
+				80D35F601B78FC54002F1854 /* ETReplyData.h */,
+				80D35F611B78FC54002F1854 /* ETReplyData.m */,
+				80D35F631B7900D9002F1854 /* ETCommentUserData.h */,
+				80D35F641B7900D9002F1854 /* ETCommentUserData.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -886,6 +938,11 @@
 				803072461B70F73F0094FEB3 /* ETVedioView.h */,
 				803072471B70F73F0094FEB3 /* ETVedioView.m */,
 				8030724B1B7114010094FEB3 /* ETVedioView.xib */,
+				80D35F661B7906DD002F1854 /* ETCommentCell.h */,
+				80D35F671B7906DD002F1854 /* ETCommentCell.m */,
+				80D35F681B7906DD002F1854 /* ETCommentCell.xib */,
+				80EC4C951B79A9A0006EE60B /* ETHeaderView.h */,
+				80EC4C961B79A9A0006EE60B /* ETHeaderView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -990,6 +1047,8 @@
 			children = (
 				80D8E5601B614C9A005643AB /* ETTabBar.h */,
 				80D8E5611B614C9A005643AB /* ETTabBar.m */,
+				80EC4C9B1B79E6B0006EE60B /* ETTopWindow.h */,
+				80EC4C9C1B79E6B0006EE60B /* ETTopWindow.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1008,6 +1067,7 @@
 				8036FB1C1B6F760F00707912 /* ETShowDetailsController.m */,
 				808850571B7193B000AD9A9F /* ETReplyController.h */,
 				808850581B7193B000AD9A9F /* ETReplyController.m */,
+				80EB0FD21B783F4B0060488D /* ETReplyController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1061,8 +1121,8 @@
 		80D8E5581B614C4A005643AB /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				80D8E5591B614C4A005643AB /* ETNewPostController.h */,
-				80D8E55A1B614C4A005643AB /* ETNewPostController.m */,
+				80EC4C981B79DEC0006EE60B /* ETNewPostController.h */,
+				80EC4C991B79DEC0006EE60B /* ETNewPostController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1089,6 +1149,10 @@
 				80A9E8151B62F83900A03869 /* UIColor+ETExtension.m */,
 				8009589D1B687723005CF3B0 /* NSDate+ETExtentsion.h */,
 				8009589E1B687723005CF3B0 /* NSDate+ETExtentsion.m */,
+				80EC4CA11B79F26F006EE60B /* UIImage+ETExtension.h */,
+				80EC4CA21B79F26F006EE60B /* UIImage+ETExtension.m */,
+				80EC4CA41B79F645006EE60B /* UIImageView+ETExtension.h */,
+				80EC4CA51B79F645006EE60B /* UIImageView+ETExtension.m */,
 			);
 			path = cagegory;
 			sourceTree = "<group>";
@@ -1198,11 +1262,14 @@
 				8030724C1B7114010094FEB3 /* ETVedioView.xib in Resources */,
 				804726181B635A9400A942AC /* LICENSE in Resources */,
 				80DBEC5C1B6327100055D0E1 /* ETCategoryCell.xib in Resources */,
+				80D35F6A1B7906DD002F1854 /* ETCommentCell.xib in Resources */,
 				80CC79641B66FC1500C64B10 /* MM_0.jpg in Resources */,
 				8043D4F11B66F95D002FDE45 /* ETRecommendTagCell.xib in Resources */,
 				80C31CEF1B670C4A003F1D01 /* ETLoginRegisterController.xib in Resources */,
 				8019CA341B617EB900416150 /* ETFriendController.xib in Resources */,
 				8047262B1B635A9400A942AC /* SVProgressHUD.bundle in Resources */,
+				80EB0FD31B783F4B0060488D /* ETReplyController.xib in Resources */,
+				80D76F7C1B72F7AC00E73F9A /* ETToolView.xib in Resources */,
 				8087B7861B65FDA50011894A /* LICENSE in Resources */,
 				8031CE361B6590E20023F3EA /* ETUserCell.xib in Resources */,
 				80CC795F1B66FB7E00C64B10 /* ETTopicCell.xib in Resources */,
@@ -1239,6 +1306,7 @@
 				8031CE531B65D11F0023F3EA /* MASViewAttribute.m in Sources */,
 				804725FC1B635A9400A942AC /* AFHTTPRequestOperationManager.m in Sources */,
 				804726111B635A9400A942AC /* MJProperty.m in Sources */,
+				80F99FDB1B75C58200D8E611 /* ETEditTagTextField.m in Sources */,
 				8087B7961B65FDA50011894A /* MJRefreshConst.m in Sources */,
 				80D13D4E1B71D36400EE2329 /* ETPublishController.m in Sources */,
 				8047261C1B635A9400A942AC /* SDWebImageCompat.m in Sources */,
@@ -1253,6 +1321,7 @@
 				804726091B635A9400A942AC /* UIButton+AFNetworking.m in Sources */,
 				803072481B70F73F0094FEB3 /* ETVedioView.m in Sources */,
 				80E48D961B6E81C100C7BEE1 /* README.md in Sources */,
+				80CE117B1B7457FE003F8184 /* ETTagEditController.m in Sources */,
 				804726191B635A9400A942AC /* README.md in Sources */,
 				804726071B635A9400A942AC /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				8087B7881B65FDA50011894A /* MJRefreshBackFooter.m in Sources */,
@@ -1276,10 +1345,12 @@
 				804726291B635A9400A942AC /* README.md in Sources */,
 				80A9E81E1B63164400A03869 /* ETUserCell.m in Sources */,
 				804726241B635A9400A942AC /* UIImage+MultiFormat.m in Sources */,
+				80D35F621B78FC54002F1854 /* ETReplyData.m in Sources */,
 				8019CA321B6163FC00416150 /* UIBarButtonItem+ETExtension.m in Sources */,
 				8031CE521B65D11F0023F3EA /* MASLayoutConstraint.m in Sources */,
 				80B996D11B67289800B8EEE3 /* ETRecommendTagData.m in Sources */,
 				8087B78A1B65FDA50011894A /* MJRefreshFooter.m in Sources */,
+				80D76F7A1B72F70B00E73F9A /* ETToolView.m in Sources */,
 				804726051B635A9400A942AC /* README.md in Sources */,
 				8036FB1D1B6F760F00707912 /* ETShowDetailsController.m in Sources */,
 				804726261B635A9400A942AC /* UIImageView+WebCache.m in Sources */,
@@ -1290,6 +1361,7 @@
 				8087B7931B65FDA50011894A /* MJRefreshNormalHeader.m in Sources */,
 				804726231B635A9400A942AC /* UIImage+GIF.m in Sources */,
 				804726081B635A9400A942AC /* UIAlertView+AFNetworking.m in Sources */,
+				80F9D8681B75FC9F00DF1AA6 /* ETTagButton.m in Sources */,
 				80A9E81B1B63163100A03869 /* ETCategoryCell.m in Sources */,
 				804726201B635A9400A942AC /* SDWebImageManager.m in Sources */,
 				8031CE501B65D11F0023F3EA /* MASConstraint.m in Sources */,
@@ -1299,9 +1371,9 @@
 				80E48D951B6E81C100C7BEE1 /* LICENSE.md in Sources */,
 				804725FD1B635A9400A942AC /* AFHTTPSessionManager.m in Sources */,
 				8047260D1B635A9400A942AC /* UIWebView+AFNetworking.m in Sources */,
+				80EC4C971B79A9A0006EE60B /* ETHeaderView.m in Sources */,
 				80D8E55F1B614C6B005643AB /* AppDelegate.m in Sources */,
 				8031CE561B65D11F0023F3EA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				80D8E55B1B614C4A005643AB /* ETNewPostController.m in Sources */,
 				80C31CEE1B670C4A003F1D01 /* ETLoginRegisterController.m in Sources */,
 				808850591B7193B000AD9A9F /* ETReplyController.m in Sources */,
 				8047260C1B635A9400A942AC /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1316,14 +1388,17 @@
 				8087B78D1B65FDA50011894A /* MJRefreshAutoNormalFooter.m in Sources */,
 				8087B7981B65FDA50011894A /* UIScrollView+MJRefresh.m in Sources */,
 				8043D4EE1B66F914002FDE45 /* ETRecommendTagCell.m in Sources */,
+				80D35F651B7900D9002F1854 /* ETCommentUserData.m in Sources */,
 				80E48D931B6E81C100C7BEE1 /* DACircularProgressView.m in Sources */,
 				80D8E54C1B614BDF005643AB /* ETFriendController.m in Sources */,
 				80D07A351B5FB9EC00E0E31F /* main.m in Sources */,
 				80DBEC5A1B6321640055D0E1 /* ETCategoryData.m in Sources */,
 				8087B7921B65FDA50011894A /* MJRefreshGifHeader.m in Sources */,
+				80EC4C9A1B79DEC0006EE60B /* ETNewPostController.m in Sources */,
 				8047261A1B635A9400A942AC /* NSData+ImageContentType.m in Sources */,
 				80D8E5661B6152E3005643AB /* UIView+ETExtension.m in Sources */,
 				8047260F1B635A9400A942AC /* MJConst.m in Sources */,
+				80EC4CA61B79F645006EE60B /* UIImageView+ETExtension.m in Sources */,
 				804726221B635A9400A942AC /* UIButton+WebCache.m in Sources */,
 				804726271B635A9400A942AC /* UIView+WebCacheOperation.m in Sources */,
 				8087B7971B65FDA50011894A /* UIScrollView+MJExtension.m in Sources */,
@@ -1337,12 +1412,15 @@
 				804725FE1B635A9400A942AC /* AFNetworkReachabilityManager.m in Sources */,
 				8047262C1B635A9400A942AC /* SVProgressHUD.m in Sources */,
 				8087B78B1B65FDA50011894A /* MJRefreshHeader.m in Sources */,
+				80D35F691B7906DD002F1854 /* ETCommentCell.m in Sources */,
 				80CBDB071B66B99D004E990C /* ETButton.m in Sources */,
 				8031CE511B65D11F0023F3EA /* MASConstraintMaker.m in Sources */,
 				80CBDB0A1B66E38E004E990C /* ETColorTextField.m in Sources */,
 				8087B7991B65FDA50011894A /* UIView+MJExtension.m in Sources */,
 				804726171B635A9400A942AC /* README.md in Sources */,
+				80EC4C9D1B79E6B0006EE60B /* ETTopWindow.m in Sources */,
 				8047260A1B635A9400A942AC /* UIImageView+AFNetworking.m in Sources */,
+				80EC4CA31B79F26F006EE60B /* UIImage+ETExtension.m in Sources */,
 				80A9E8161B62F83900A03869 /* UIColor+ETExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1453,6 +1531,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = BSBDQJItem/Item.pch;
 				INFOPLIST_FILE = BSBDQJItem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1465,6 +1544,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = BSBDQJItem/Item.pch;
 				INFOPLIST_FILE = BSBDQJItem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

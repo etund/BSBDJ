@@ -44,7 +44,6 @@
     NSString *selfDate = [dfm stringFromDate:self];
     NSString *nowDate = [dfm stringFromDate:[NSDate date]];
     return [selfDate isEqualToString:nowDate];
-    
 }
 
 - (BOOL)isThisMin{
@@ -61,9 +60,7 @@
     dfm.timeZone = [NSTimeZone timeZoneWithName:@"Etc/GMT+8"];
     NSDate *nowDate = [dfm dateFromString:[dfm stringFromDate:[NSDate date]]];
     NSDate *selfDate  = [dfm dateFromString:[dfm stringFromDate:self]];
-    
     NSCalendar *calendar = [NSCalendar currentCalendar];
-//    NSDateComponents *comp = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:selfDate toDate:nowDate options:0];
     return [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:selfDate toDate:nowDate options:0];
 }
 

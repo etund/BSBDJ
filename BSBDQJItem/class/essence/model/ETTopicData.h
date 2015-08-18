@@ -11,6 +11,7 @@
 
 @interface ETTopicData : NSObject
 /** 内容属性*/
+@property (nonatomic, copy) NSString * ID;
 //上部内容
 @property (nonatomic, strong) NSString * name;
 @property (nonatomic, strong) NSString * profile_image;

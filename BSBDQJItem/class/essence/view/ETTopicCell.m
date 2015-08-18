@@ -20,7 +20,7 @@
 
 
 
-@interface ETTopicCell()
+@interface ETTopicCell()//<NSCopying,NSMutableCopying>
 @property (weak, nonatomic) IBOutlet UIImageView * icon;
 @property (weak, nonatomic) IBOutlet UILabel * name;
 @property (weak, nonatomic) IBOutlet UILabel * postTime;
@@ -47,7 +47,8 @@
     _data = data;
     
 //      顶部内容
-    [self.icon sd_setImageWithURL:[NSURL URLWithString:data.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+//    [self.icon sd_setImageWithURL:[NSURL URLWithString:data.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.icon setHeader:data.profile_image];
     self.name.text = data.name;
     self.postTime.text = data.created_at;
     self.contentText.text = self.data.text;
@@ -75,7 +76,6 @@
         self.voiceView.hidden = YES;
         self.vedioView.hidden = YES;
     }
-//    底部内容
     [self setDataOfBtn:self.caiBtn WithData:data.cai];
     [self setDataOfBtn:self.dingBtn WithData:data.ding];
     [self setDataOfBtn:self.repost WithData:data.repost];
@@ -92,8 +92,8 @@
 - (void)setFrame:(CGRect)frame{
     frame.origin.x += TopicCellMargin;
     frame.size.width -= 2 * frame.origin.x;
-    frame.size.height -= TopicCellMargin;
-    frame.origin.y += TopicCellMargin;
+//    frame.size.height -= TopicCellMargin;
+//    frame.origin.y += TopicCellMargin;
     [super setFrame:frame];
 }
 
@@ -213,4 +213,9 @@
     self.vedioView = vedioView;
     [self addSubview:vedioView];
 }
+
+//+ (instancetype)newCell:(ETTopicCell *)topicCell{
+//    ETTopicCell *cell = [[ETTopicCell alloc] init];
+//    
+//}
 @end

@@ -20,4 +20,6 @@
 @property (nonatomic, strong) ETTopicData * data;
 
 @property (nonatomic, assign) id<ETTopicCellDelegate>  delegate;
+
+//+ (instancetype)newCell:(ETTopicCell *)topicCell;
 @end

@@ -32,13 +32,16 @@ static NSString * const topicID = @"tipic";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+//    _dataType = @"list";
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = ETGlobalBackColor;
     self.view.frame = [UIScreen mainScreen].bounds;
     [self viewDeal];
-    
+//    [self.tableView ] 
+}
+
+- (NSString *)dataType{
+    return @"list";
 }
 
 
@@ -62,28 +65,34 @@ static NSString * const topicID = @"tipic";
     ETTopicController *allVC = [[ETTopicController alloc] init];
     allVC.title = @"全部";
     allVC.type = ETTopicControllerTypeAll;
+    allVC.dataType = self.dataType;
     
     ETTopicController *wordVC = [[ETTopicController  alloc] init];
     wordVC.title = @"段子";
     wordVC.type = ETTopicControllerTypeWord;
+    wordVC.dataType = self.dataType;
     
     ETTopicController *picVC = [[ETTopicController alloc] init];
     picVC.title = @"图片";
     picVC.type = ETTopicControllerTypePic;
+    picVC.dataType = self.dataType;
     
     ETTopicController *voiceVC = [[ETTopicController alloc] init];
     voiceVC.title = @"声音";
     voiceVC.type = ETTopicControllerTypeVoice;
+    voiceVC.dataType = self.dataType;
     
     ETTopicController *videoVC = [[ETTopicController alloc] init];
     videoVC.title = @"视频";
     videoVC.type = ETTopicControllerTypeVideo;
+    videoVC.dataType = self.dataType;
     
     [self addChildViewController:allVC];
     [self addChildViewController:wordVC];
     [self addChildViewController:picVC];
     [self addChildViewController:voiceVC];
     [self addChildViewController:videoVC];
+//    [self.childViewControllers makeObjectsPerformSelector:@selector(setDataType:) withObject:self.dataType];
 }
 - (void)loadFristView{
     NSInteger index = 0;
@@ -183,6 +192,9 @@ static NSString * const topicID = @"tipic";
     [self.baseScrollView addSubview:vc.view];
 }
 
+- (void)dealloc{
+    
+}
 
 
 @end

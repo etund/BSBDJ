@@ -15,3 +15,14 @@ CGFloat const TopicCellMargin = 10;
 CGFloat const TopicCellTopHeight = 50;
 
 CGFloat const TopicCellBottomHeight = 30;
+
+//间隔
+CGFloat const ETTagEditViewMargin = 10;
+//最多标签数
+NSInteger const MaxBtnCount = 5;
+//标签之间的间距
+CGFloat const TagMargin = 5;
+//添加标签右侧的最小留空值
+CGFloat const MinRigtMargin = 80;
+
+NSString * const ETTabBarDidSelectNotification = @"ETTabBarDidSelectNotification";

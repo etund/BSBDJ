@@ -23,6 +23,8 @@ static NSString * const allID = @"all";
 @property (nonatomic, strong) NSMutableArray * topicDatas;
 
 @property (nonatomic, strong)  AFHTTPSessionManager* manager;
+
+@property (nonatomic, assign) NSInteger  lasetSelectIndex;
 @end
 
 @implementation ETTopicController
@@ -67,7 +69,7 @@ static NSString * const allID = @"all";
 - (void)loadNewData{
     [self.tableView.footer endRefreshing];
     NSMutableDictionary *prams = [NSMutableDictionary dictionary];
-    prams[@"a"] = @"list";
+    prams[@"a"] = self.dataType;// @"list";
     prams[@"c"] = @"data";
     prams[@"type"] = @(self.type);
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:prams success:^(NSURLSessionDataTask *task, NSDictionary * responseObject) {
@@ -128,7 +130,32 @@ static NSString * const allID = @"all";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self.navigationController pushViewController:[[ETReplyController alloc] init] animated:YES];
+    
+    ETReplyController *replyController = [[ETReplyController alloc] init];
+    replyController.topPicData = self.topicDatas[indexPath.row];
+    
+    [self.navigationController pushViewController:replyController animated:YES];
 }
+
+#pragma mark - 通知的接收与移除
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [ETDefaultNotificationCenter addObserver:self selector:@selector(tabBarClick) name:ETTabBarDidSelectNotification object:nil];
+//    self.tableView.header.autoChangeAlpha
+}
+
+- (void)tabBarClick{
+    ETLog(@"--------------");
+    if (self.lasetSelectIndex == self.tabBarController.selectedIndex&&self.view.isShowingOnCurrentWindow) {
+        [self.tableView.header beginRefreshing];
+    }
+    self.lasetSelectIndex = self.tabBarController.selectedIndex;
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [ETDefaultNotificationCenter removeObserver:self];
+}
+
 
 @end

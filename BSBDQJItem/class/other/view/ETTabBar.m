@@ -32,10 +32,13 @@
 
 @property (nonatomic, strong) NSMutableArray * viewArr;
 
+@property (nonatomic, assign,getter=isAddedFlag) BOOL  addedFlag;
+
 @end
 
 @implementation ETTabBar
 
+#pragma mark - 懒加载
 - (UIGravityBehavior *)gravity{
     if (!_gravity) {
         _gravity = [[UIGravityBehavior alloc] init];
@@ -59,18 +62,24 @@
     return _animator;
 }
 
+#pragma mark - 重写系统方法
 - (void)layoutSubviews{
     
     [super layoutSubviews];
+//    static BOOL added = YES;
     int index = 0;
     CGFloat width = ETDivided;
-    for (UIView *view in self.subviews) {
+    for (UIButton *view in self.subviews) {
         if ([view isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             view.frame = CGRectMake(index * width, 0, width, self.height);
             index++;
             index = index!=2?index:index+1;
+            if (!self.isAddedFlag) {
+                [view addTarget:self action:@selector(toTop) forControlEvents:UIControlEventTouchUpInside];
+            }
         }
     }
+    self.addedFlag = YES;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -91,6 +100,13 @@
     
 }
 
+#pragma mark - tabbar按钮功能实现
+- (void)toTop{
+//    在通知中心注册通知
+    [ETDefaultNotificationCenter postNotificationName:ETTabBarDidSelectNotification object:nil];
+}
+
+#pragma mark - 添加按钮功能实现
 //动画效果
 - (void)animationWay{
 //    第一种方式
@@ -168,22 +184,27 @@
     }
 }
 
+
+
 //监听按钮点击
 - (void)btnClick:(UIButton *)btn{
     [UIView animateWithDuration:1.0 animations:^{
         [self viewDismiss];
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:1.0 animations:^{
-            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:[[ETNavContioller alloc] initWithRootViewController:[[ETPublishController alloc] init]] animated:YES completion:nil];
+            UINavigationController *nav = [[ETNavContioller alloc] initWithRootViewController:[[ETPublishController alloc] init]];
+            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
         }];
     }];
 }
 
 //转场动画
 - (void)cancleBtnClick{
-    for (UIView *view in self.view.subviews) {
-        view.userInteractionEnabled = NO;
-    }
+//    [self.view layoutIfNeeded]
+//    for (UIView *view in self.view.subviews) {
+//        view.userInteractionEnabled = NO;
+//    }
+    [self.view.subviews makeObjectsPerformSelector:@selector(setUserInteractionEnabled:) withObject:@(NO)];
     self.viewArr = [NSMutableArray arrayWithArray:self.view.subviews];
     self.index = 0;
     self.timer_ = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
@@ -255,4 +276,6 @@
     }];
     
 }
+
+
 @end

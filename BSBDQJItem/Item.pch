@@ -29,6 +29,9 @@
 
 //NSDate分类
 #import "NSDate+ETExtentsion.h"
+//UIImageView分类
+#import "UIImageView+ETExtension.h"
+
 
 #import "ETConst.h"
 
@@ -39,6 +42,10 @@
 #define ETScreenW [UIScreen mainScreen].bounds.size.width
 #define ETScreenH [UIScreen mainScreen].bounds.size.height
 
+//主窗口
 #define ETKeyWindow [UIApplication sharedApplication].keyWindow
+
+//通知中心
+#define ETDefaultNotificationCenter [NSNotificationCenter defaultCenter]
 
 #endif
