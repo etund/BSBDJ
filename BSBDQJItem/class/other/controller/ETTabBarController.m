@@ -22,21 +22,7 @@
 
 @implementation ETTabBarController
 
-#pragma mark - 统一设置属性
-+ (void)initialize{
-    NSMutableDictionary *nomalDict = [NSMutableDictionary dictionary];
-    nomalDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
-    nomalDict[NSForegroundColorAttributeName] = [UIColor grayColor];
-    
-    NSMutableDictionary *selectDict = [NSMutableDictionary dictionary];
-    selectDict[NSFontAttributeName] = nomalDict[NSFontAttributeName];
-    selectDict[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
-    
-    UITabBarItem *item = [UITabBarItem appearance];
-    [item setTitleTextAttributes:nomalDict forState:UIControlStateNormal];
-    [item setTitleTextAttributes:selectDict forState:UIControlStateHighlighted];
-    
-}
+
 
 #pragma mark - 初始化方法
 + (instancetype)tabBarController{

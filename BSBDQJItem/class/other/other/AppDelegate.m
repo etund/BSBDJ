@@ -20,9 +20,31 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [ETTabBarController tabBarController];
     [self.window makeKeyAndVisible];
+    [self configreAppearance];
     return YES;
 }
 
+#pragma mark - 统一设置属性
+- (void)configreAppearance{
+    
+    UINavigationBar *bar = [UINavigationBar appearance];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSFontAttributeName] = [UIFont systemFontOfSize:14 weight:100];
+    [bar setTitleTextAttributes:dict];
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
+    NSMutableDictionary *nomalDict = [NSMutableDictionary dictionary];
+    nomalDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    nomalDict[NSForegroundColorAttributeName] = [UIColor grayColor];
+    
+    NSMutableDictionary *selectDict = [NSMutableDictionary dictionary];
+    selectDict[NSFontAttributeName] = nomalDict[NSFontAttributeName];
+    selectDict[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+    
+    UITabBarItem *item = [UITabBarItem appearance];
+    [item setTitleTextAttributes:nomalDict forState:UIControlStateNormal];
+    [item setTitleTextAttributes:selectDict forState:UIControlStateHighlighted];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
 }

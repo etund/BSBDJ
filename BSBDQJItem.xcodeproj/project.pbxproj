@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33B5C4B91BD4CC9600E7B547 /* ETNewPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B5C4B61BD4CC9600E7B547 /* ETNewPostController.m */; };
 		8009589F1B687723005CF3B0 /* NSDate+ETExtentsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8009589E1B687723005CF3B0 /* NSDate+ETExtentsion.m */; };
 		8012FE9D1B618A1100DBFEFC /* UINavigationController+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8012FE9C1B618A1100DBFEFC /* UINavigationController+ETExtension.m */; };
 		8019CA321B6163FC00416150 /* UIBarButtonItem+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8019CA311B6163FC00416150 /* UIBarButtonItem+ETExtension.m */; };
@@ -149,7 +150,6 @@
 		80E48D961B6E81C100C7BEE1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 80E48D921B6E81C100C7BEE1 /* README.md */; };
 		80EB0FD31B783F4B0060488D /* ETReplyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80EB0FD21B783F4B0060488D /* ETReplyController.xib */; };
 		80EC4C971B79A9A0006EE60B /* ETHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4C961B79A9A0006EE60B /* ETHeaderView.m */; };
-		80EC4C9A1B79DEC0006EE60B /* ETNewPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4C991B79DEC0006EE60B /* ETNewPostController.m */; };
 		80EC4C9D1B79E6B0006EE60B /* ETTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4C9C1B79E6B0006EE60B /* ETTopWindow.m */; };
 		80EC4CA31B79F26F006EE60B /* UIImage+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4CA21B79F26F006EE60B /* UIImage+ETExtension.m */; };
 		80EC4CA61B79F645006EE60B /* UIImageView+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC4CA51B79F645006EE60B /* UIImageView+ETExtension.m */; };
@@ -168,6 +168,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33B5C4B51BD4CC9600E7B547 /* ETNewPostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNewPostController.h; sourceTree = "<group>"; };
+		33B5C4B61BD4CC9600E7B547 /* ETNewPostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNewPostController.m; sourceTree = "<group>"; };
 		8009589D1B687723005CF3B0 /* NSDate+ETExtentsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ETExtentsion.h"; sourceTree = "<group>"; };
 		8009589E1B687723005CF3B0 /* NSDate+ETExtentsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ETExtentsion.m"; sourceTree = "<group>"; };
 		8012FE9B1B618A1100DBFEFC /* UINavigationController+ETExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ETExtension.h"; sourceTree = "<group>"; };
@@ -436,8 +438,6 @@
 		80EB0FD21B783F4B0060488D /* ETReplyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETReplyController.xib; sourceTree = "<group>"; };
 		80EC4C951B79A9A0006EE60B /* ETHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHeaderView.h; sourceTree = "<group>"; };
 		80EC4C961B79A9A0006EE60B /* ETHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHeaderView.m; sourceTree = "<group>"; };
-		80EC4C981B79DEC0006EE60B /* ETNewPostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETNewPostController.h; path = ../../../../../../../../../Users/etund/Documents/ETNewPostController.h; sourceTree = "<group>"; };
-		80EC4C991B79DEC0006EE60B /* ETNewPostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETNewPostController.m; path = ../../../../../../../../../Users/etund/Documents/ETNewPostController.m; sourceTree = "<group>"; };
 		80EC4C9B1B79E6B0006EE60B /* ETTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTopWindow.h; sourceTree = "<group>"; };
 		80EC4C9C1B79E6B0006EE60B /* ETTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTopWindow.m; sourceTree = "<group>"; };
 		80EC4CA11B79F26F006EE60B /* UIImage+ETExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ETExtension.h"; sourceTree = "<group>"; };
@@ -468,6 +468,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33B5C4B31BD4CC9600E7B547 /* newPost */ = {
+			isa = PBXGroup;
+			children = (
+				33B5C4B41BD4CC9600E7B547 /* controller */,
+				33B5C4B71BD4CC9600E7B547 /* model */,
+				33B5C4B81BD4CC9600E7B547 /* view */,
+			);
+			path = newPost;
+			sourceTree = "<group>";
+		};
+		33B5C4B41BD4CC9600E7B547 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				33B5C4B51BD4CC9600E7B547 /* ETNewPostController.h */,
+				33B5C4B61BD4CC9600E7B547 /* ETNewPostController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		33B5C4B71BD4CC9600E7B547 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		33B5C4B81BD4CC9600E7B547 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		8031CE371B65D11F0023F3EA /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -884,11 +917,11 @@
 		80D8E52B1B614ACD005643AB /* class */ = {
 			isa = PBXGroup;
 			children = (
+				33B5C4B31BD4CC9600E7B547 /* newPost */,
 				80D13D471B71D02200EE2329 /* publish */,
 				80D8E52C1B614ACD005643AB /* essence */,
 				80D8E5301B614ACD005643AB /* friend */,
 				80D8E5341B614ACD005643AB /* me */,
-				80D8E5381B614ACD005643AB /* newPost */,
 				80D8E53C1B614ACD005643AB /* other */,
 			);
 			path = class;
@@ -998,30 +1031,6 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		80D8E5381B614ACD005643AB /* newPost */ = {
-			isa = PBXGroup;
-			children = (
-				80D8E5581B614C4A005643AB /* controller */,
-				80D8E53A1B614ACD005643AB /* model */,
-				80D8E53B1B614ACD005643AB /* view */,
-			);
-			path = newPost;
-			sourceTree = "<group>";
-		};
-		80D8E53A1B614ACD005643AB /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		80D8E53B1B614ACD005643AB /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
 		80D8E53C1B614ACD005643AB /* other */ = {
 			isa = PBXGroup;
 			children = (
@@ -1114,15 +1123,6 @@
 				80D8E5531B614C24005643AB /* ETNavContioller.m */,
 				80D8E5541B614C24005643AB /* ETTabBarController.h */,
 				80D8E5551B614C24005643AB /* ETTabBarController.m */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		80D8E5581B614C4A005643AB /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				80EC4C981B79DEC0006EE60B /* ETNewPostController.h */,
-				80EC4C991B79DEC0006EE60B /* ETNewPostController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1334,6 +1334,7 @@
 				80D8E5501B614BFE005643AB /* ETMeController.m in Sources */,
 				80B996D71B674B4C00B8EEE3 /* ETTopicController.m in Sources */,
 				804726161B635A9400A942AC /* NSString+MJExtension.m in Sources */,
+				33B5C4B91BD4CC9600E7B547 /* ETNewPostController.m in Sources */,
 				8087B7891B65FDA50011894A /* MJRefreshComponent.m in Sources */,
 				804726131B635A9400A942AC /* NSObject+MJCoding.m in Sources */,
 				80BA90ED1B6690B3003A45DF /* ETEssenceController.m in Sources */,
@@ -1394,7 +1395,6 @@
 				80D07A351B5FB9EC00E0E31F /* main.m in Sources */,
 				80DBEC5A1B6321640055D0E1 /* ETCategoryData.m in Sources */,
 				8087B7921B65FDA50011894A /* MJRefreshGifHeader.m in Sources */,
-				80EC4C9A1B79DEC0006EE60B /* ETNewPostController.m in Sources */,
 				8047261A1B635A9400A942AC /* NSData+ImageContentType.m in Sources */,
 				80D8E5661B6152E3005643AB /* UIView+ETExtension.m in Sources */,
 				8047260F1B635A9400A942AC /* MJConst.m in Sources */,

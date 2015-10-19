@@ -14,14 +14,7 @@
 
 @implementation ETNavContioller
 
-+ (void)initialize{
-    UINavigationBar *bar = [UINavigationBar appearance];
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    dict[NSFontAttributeName] = [UIFont systemFontOfSize:21 weight:100];
-    
-    [bar setTitleTextAttributes:dict];
-    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
-}
+
 
 - (void)viewDidLoad{
     
@@ -37,6 +30,7 @@
     if (self.childViewControllers.count > 0) {
 //        设置文字属性
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        backBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [backBtn setTitle:@"返回" forState:UIControlStateNormal];
         [backBtn setTitle:@"返回" forState:UIControlStateHighlighted];
         [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];

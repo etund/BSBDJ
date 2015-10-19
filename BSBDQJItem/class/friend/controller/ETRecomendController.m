@@ -39,7 +39,6 @@ static NSString * const userID = @"user";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = ETGlobalBackColor;
-    NSLog(@"%@----------",NSStringFromCGRect(self.view.frame));
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MM.jpg"]];
     imageView.frame = self.view.frame;
     self.view = imageView;
@@ -94,7 +93,6 @@ static NSString * const userID = @"user";
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [SVProgressHUD showErrorWithStatus:@"数据加载失败"];
     }];
-    ETLog(@"%@-------------%@-----%f",NSStringFromCGRect(self.userView.frame),NSStringFromCGRect(self.categoryView.frame),self.view.width);
 }
 
 
@@ -176,6 +174,7 @@ static NSString * const userID = @"user";
     categoryView.dataSource = self;
     categoryView.showsHorizontalScrollIndicator = NO;
     categoryView.showsVerticalScrollIndicator = NO;
+    categoryView.contentInset = UIEdgeInsetsMake(70, 0, 0, 0);
     self.categoryView = categoryView;
     [self.view addSubview:categoryView];
 }

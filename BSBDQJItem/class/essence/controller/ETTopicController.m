@@ -14,6 +14,7 @@
 #import "MJExtension.h"
 #import "AFNetworking.h"
 #import "MJRefresh.h"
+#import "ETNewPostController.h"
 
 
 static NSString * const allID = @"all";
@@ -25,7 +26,11 @@ static NSString * const allID = @"all";
 @property (nonatomic, strong)  AFHTTPSessionManager* manager;
 
 @property (nonatomic, assign) NSInteger  lasetSelectIndex;
+
+@property (nonatomic, strong) NSString * dataType;
+
 @end
+
 
 @implementation ETTopicController
 
@@ -50,6 +55,11 @@ static NSString * const allID = @"all";
         _manager = [AFHTTPSessionManager manager];
     }
     return _manager;
+}
+
+- (NSString *)dataType{
+    return [self.parentViewController isKindOfClass:[ETNewPostController class]]?@"newList"
+    :@"list";
 }
 
 #pragma mark - 视图处理
