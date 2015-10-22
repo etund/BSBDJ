@@ -114,7 +114,6 @@ static NSString * const topicID = @"tipic";
             indecatorView.center = CGPointMake(btn.center.x, indecatorView.center.y);
             indecatorView.backgroundColor = [UIColor redColor];
             [btn layoutIfNeeded];
-            ETLog(@"--%@",NSStringFromCGPoint(btn.center));
             indecatorView.width = btn.titleLabel.width;
             indecatorView.center =  CGPointMake(btn.center.x, indecatorView.center.y);
             self.indecatorView = indecatorView;

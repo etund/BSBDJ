@@ -10,6 +10,6 @@
 
 @interface ETTabBarController : UITabBarController
 
-+ (instancetype)tabBarController;
++ (instancetype)tabBarControllerWithTitleArray:(NSArray *)titles andNormalImages:(NSArray *)nomalImages andSelectedImages:(NSArray *)selectedImages andClassName:(NSArray *)classNames;
 
 @end

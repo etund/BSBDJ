@@ -26,6 +26,7 @@ static NSString * tagCellId = @"tagCell";
     self.view.backgroundColor = ETGlobalBackColor;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ETRecommendTagCell  class]) bundle:nil] forCellReuseIdentifier:tagCellId];
     [self dataHandle];
+    self.title = @"推荐关注";
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MM.jpg"]];
@@ -39,8 +40,6 @@ static NSString * tagCellId = @"tagCell";
     prams[@"action"] = @"sub";
     prams[@"c"] = @"topic";
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:prams success:^(NSURLSessionDataTask *task, NSDictionary * responseObject) {
-        //ETLog(@"%@-------------",responseObject);
-        //[responseObject writeToFile:@"/Users/etund/Desktop/data.plist" atomically:YES];
         self.tagDatas = [ETRecommendTagData objectArrayWithKeyValuesArray:responseObject];
         [self.tableView reloadData];
         [SVProgressHUD dismiss];

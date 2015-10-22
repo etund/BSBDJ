@@ -15,18 +15,12 @@
 @implementation ETNavContioller
 
 
-
-- (void)viewDidLoad{
-    
-    self.automaticallyAdjustsScrollViewInsets = NO;
-}
-
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if ([self checkIsExit:viewController]) {
         return;
     }
     
-//    非根控制器 q
+//    非根控制器
     if (self.childViewControllers.count > 0) {
 //        设置文字属性
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -35,7 +29,6 @@
         [backBtn setTitle:@"返回" forState:UIControlStateHighlighted];
         [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-        
         [backBtn setImage:[[UIImage imageNamed:@"navigationButtonReturn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         [backBtn setImage:[[UIImage imageNamed:@"navigationButtonReturnClick"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateHighlighted];
         [backBtn sizeToFit];
@@ -46,8 +39,6 @@
         
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
         viewController.hidesBottomBarWhenPushed = YES;
-        viewController.view.frame = [UIScreen mainScreen].bounds;
-        viewController.automaticallyAdjustsScrollViewInsets = NO;
     }
     
     [super pushViewController:viewController animated:YES];

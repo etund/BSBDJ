@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "ETTabBarController.h"
 #import "ETTopWindow.h"
+#import "ETEssenceController.h"
+#import "ETNewPostController.h"
+#import "ETFriendController.h"
+#import "ETMeController.h"
 
 @interface AppDelegate ()
 
@@ -18,9 +22,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [ETTabBarController tabBarController];
+    self.window.rootViewController = [ETTabBarController tabBarControllerWithTitleArray:@[@"精华",@"新帖",@"关注",@"我"] andNormalImages:@[@"tabBar_essence_icon",@"tabBar_new_icon",@"tabBar_friendTrends_icon",@"tabBar_me_icon"] andSelectedImages:@[@"tabBar_essence_click_icon",@"tabBar_new_click_icon",@"tabBar_friendTrends_click_icon",@"tabBar_me_click_icon"] andClassName:@[[ETEssenceController class] ,[ETNewPostController class],[ETFriendController class],[ETMeController class]]];
     [self.window makeKeyAndVisible];
     [self configreAppearance];
+    
     return YES;
 }
 
@@ -32,6 +37,7 @@
     dict[NSFontAttributeName] = [UIFont systemFontOfSize:14 weight:100];
     [bar setTitleTextAttributes:dict];
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
     
     NSMutableDictionary *nomalDict = [NSMutableDictionary dictionary];
     nomalDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];

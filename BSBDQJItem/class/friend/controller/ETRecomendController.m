@@ -174,7 +174,6 @@ static NSString * const userID = @"user";
     categoryView.dataSource = self;
     categoryView.showsHorizontalScrollIndicator = NO;
     categoryView.showsVerticalScrollIndicator = NO;
-    categoryView.contentInset = UIEdgeInsetsMake(70, 0, 0, 0);
     self.categoryView = categoryView;
     [self.view addSubview:categoryView];
 }
@@ -183,7 +182,6 @@ static NSString * const userID = @"user";
 - (void)addUserView{
     UITableView *userView = [[UITableView alloc] init];
     userView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    userView.frame = CGRectMake(self.categoryView.width, 0, self.view.width - self.categoryView.width, self.view.height);
     userView.frame = CGRectMake(self.categoryView.width, 0, self.view.width - self.categoryView.width, self.view.height);
     userView.backgroundColor = [UIColor clearColor];
     userView.contentInset = UIEdgeInsetsMake(70, 0, 0, 0);
