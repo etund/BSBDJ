@@ -7,25 +7,32 @@
 //
 
 #import "ETTabBarController.h"
-#import "ETEssenceController.h"
-#import "ETFriendController.h"
-#import "ETMeController.h"
-#import "ETNewPostController.h"
 
 #import "ETTabBar.h"
 
-#import "ETNavContioller.h"
+
 
 typedef void(^initBlock)();
 
 
 @interface ETTabBarController ()
 
-@property (nonatomic, copy)  initBlock initBLK;
 
 @end
 
 @implementation ETTabBarController
+
+static Class _navClass;
+static Class _tabBarClass;
+
++ (void)setNavClass:(Class)class{
+    _navClass = class;
+}
+
++ (void)setTabBar:(Class)class{
+    _tabBarClass = class;
+}
+
 #pragma mark - 初始化方法
 + (instancetype)tabBarControllerWithTitleArray:(NSArray *)titles andNormalImages:(NSArray *)nomalImages andSelectedImages:(NSArray *)selectedImages andClassName:(NSArray *)classNames{
     ETTabBarController *tabBarVC = [[ETTabBarController alloc] init];
@@ -40,9 +47,21 @@ typedef void(^initBlock)();
         className = classNames[i];
         [tabBarVC addSigleControllerWith:className andTitle:title withNormalImage:nomalImage andSelectImage:selectedImage];
         }
-    [tabBarVC setValue:[[ETTabBar alloc] init]forKeyPath:@"tabBar"];
+    [tabBarVC setValue:[[_tabBarClass alloc] init]forKeyPath:@"tabBar"];
     return tabBarVC;
 }
+
++ (instancetype)tabBarControllerWithTitleArray:(NSArray *)titles andNormalImages:(NSArray *)nomalImages andSelectedImages:(NSArray *)selectedImages andClassName:(NSArray *)classNames withNavigation:(Class)navigationClass{
+    [self setNavClass:navigationClass];
+    return [ETTabBarController tabBarControllerWithTitleArray:titles andNormalImages:nomalImages andSelectedImages:selectedImages andClassName:classNames];
+}
+
++ (instancetype)tabBarControllerWithTitleArray:(NSArray *)titles andNormalImages:(NSArray *)nomalImages andSelectedImages:(NSArray *)selectedImages andClassName:(NSArray *)classNames withNavigation:(Class)navigationClass andSelfTabBarClass:(Class)tabBarClass{
+    [self setNavClass:navigationClass];
+    [self setTabBar:tabBarClass];
+    return [ETTabBarController tabBarControllerWithTitleArray:titles andNormalImages:nomalImages andSelectedImages:selectedImages andClassName:classNames];
+}
+
 
 #pragma mark - 添加控制器
 //添加单个子控制器
@@ -50,8 +69,10 @@ typedef void(^initBlock)();
     UIViewController *vc = [[class alloc] init];
     vc.tabBarItem.title = tabBarTitle;
     [vc.tabBarItem setImage:[[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
     [vc.tabBarItem setSelectedImage:[[UIImage imageNamed:selectImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [self addChildViewController:[[ETNavContioller alloc] initWithRootViewController:vc]];
+    if (_navClass == nil && ![_navClass isSubclassOfClass:[UINavigationController class]]) [self addChildViewController:[[UINavigationController alloc] initWithRootViewController:vc]];
+    [self addChildViewController:[[_navClass alloc] initWithRootViewController:vc]];
 }
 
 @end

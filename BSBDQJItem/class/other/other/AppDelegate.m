@@ -13,6 +13,8 @@
 #import "ETNewPostController.h"
 #import "ETFriendController.h"
 #import "ETMeController.h"
+#import "ETNavContioller.h"
+#import "ETTabBar.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [ETTabBarController tabBarControllerWithTitleArray:@[@"精华",@"新帖",@"关注",@"我"] andNormalImages:@[@"tabBar_essence_icon",@"tabBar_new_icon",@"tabBar_friendTrends_icon",@"tabBar_me_icon"] andSelectedImages:@[@"tabBar_essence_click_icon",@"tabBar_new_click_icon",@"tabBar_friendTrends_click_icon",@"tabBar_me_click_icon"] andClassName:@[[ETEssenceController class] ,[ETNewPostController class],[ETFriendController class],[ETMeController class]]];
+    self.window.rootViewController = [ETTabBarController tabBarControllerWithTitleArray:@[@"精华",@"新帖",@"关注",@"我"] andNormalImages:@[@"tabBar_essence_icon",@"tabBar_new_icon",@"tabBar_friendTrends_icon",@"tabBar_me_icon"] andSelectedImages:@[@"tabBar_essence_click_icon",@"tabBar_new_click_icon",@"tabBar_friendTrends_click_icon",@"tabBar_me_click_icon"] andClassName:@[[ETEssenceController class] ,[ETNewPostController class],[ETFriendController class],[ETMeController class]] withNavigation:[ETNavContioller class] andSelfTabBarClass:[ETTabBar class]];
     [self.window makeKeyAndVisible];
     [self configreAppearance];
     
