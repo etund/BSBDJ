@@ -10,6 +10,7 @@
 #import "ETTopicCell.h"
 #import "ETTopicData.h"
 #import "ETReplyController.h"
+#import "ETTopManager.h"
 
 #import "MJExtension.h"
 #import "AFNetworking.h"
@@ -28,6 +29,8 @@ static NSString * const allID = @"all";
 @property (nonatomic, assign) NSInteger  lasetSelectIndex;
 
 @property (nonatomic, strong) NSString * dataType;
+
+@property (nonatomic, strong) ETTopManager * dataManager;
 
 @end
 
@@ -83,8 +86,10 @@ static NSString * const allID = @"all";
     prams[@"c"] = @"data";
     prams[@"type"] = @(self.type);
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:prams success:^(NSURLSessionDataTask *task, NSDictionary * responseObject) {
+        
         self.topicDatas = [ETTopicData objectArrayWithKeyValuesArray:responseObject[@"list"]];
         self.maxtime = responseObject[@"maxtime"];
+        
         if (self.type == ETTopicControllerTypeVideo) {
             [responseObject writeToFile:@"Users/etund/desktop/data_1.plist" atomically:YES];
         }
@@ -151,11 +156,9 @@ static NSString * const allID = @"all";
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidDisappear:animated];
     [ETDefaultNotificationCenter addObserver:self selector:@selector(tabBarClick) name:ETTabBarDidSelectNotification object:nil];
-//    self.tableView.header.autoChangeAlpha
 }
 
 - (void)tabBarClick{
-    ETLog(@"--------------");
     if (self.lasetSelectIndex == self.tabBarController.selectedIndex&&self.view.isShowingOnCurrentWindow) {
         [self.tableView.header beginRefreshing];
     }

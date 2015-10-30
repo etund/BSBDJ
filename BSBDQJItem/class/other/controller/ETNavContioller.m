@@ -19,8 +19,7 @@
     if ([self checkIsExit:viewController]) {
         return;
     }
-    
-//    非根控制器
+//        非根控制器
     if (self.childViewControllers.count > 0) {
 //        设置文字属性
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
